@@ -17,11 +17,11 @@ ________________________________________________________________________________
 
 ## Modelo relacional projetado
 
-![Desenho do Modelo Relacional](images/relacional.png);
+![Desenho do Modelo Relacional](images/relacional.png)
 
 ## Scripts - Criação das tabelas relacionas
 
-'''
+'''sql
 
 /*Deleta o banco de dados caso ele exista.*/
 
