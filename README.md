@@ -96,3 +96,5 @@ create table if not exists locacao
 );
 
 ´´´
+
+![Imagem do banco de dados Postgres](images/transaction_database.png)
