@@ -97,4 +97,6 @@ create table if not exists locacao
 
 ```
 
+### Output do script create.sql
+
 ![Imagem do banco de dados Postgres](images/transaction_database.png)
