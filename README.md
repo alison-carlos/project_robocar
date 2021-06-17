@@ -21,7 +21,7 @@ ________________________________________________________________________________
 
 ## Scripts - Criação das tabelas relacionas
 
-'''sql
+```sql
 
 /*Deleta o banco de dados caso ele exista.*/
 
@@ -95,4 +95,4 @@ create table if not exists locacao
 	constraint locacao_pkey primary key (idlocacao, idcliente, iddespachante)
 );
 
-'''
+´´´
