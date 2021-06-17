@@ -95,6 +95,6 @@ create table if not exists locacao
 	constraint locacao_pkey primary key (idlocacao, idcliente, iddespachante)
 );
 
-´´´
+```
 
 ![Imagem do banco de dados Postgres](images/transaction_database.png)
