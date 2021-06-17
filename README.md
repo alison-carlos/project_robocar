@@ -17,7 +17,7 @@ ________________________________________________________________________________
 
 ## Modelo relacional projetado
 
-![Desenho do Modelo Relacional](images/relacional.png)
+![Desenho do Modelo Relacional](images/postgres_database/relacional.png)
 
 ## Scripts - Criação das tabelas relacionas
 
@@ -97,6 +97,16 @@ create table if not exists locacao
 
 ```
 
-### Output do script create.sql
+### Executando a criação das tabelas
 
-![Imagem do banco de dados Postgres](images/transaction_database.png)
+![Criando as tabelas relacionais no Postgres](images/postgres_database/create_table.png)
+
+### Inserindo os dados 
+
+![Inserindo os dados nas tabelas do banco Locadora](images/postgres_database/insert_table.png)
+
+### Realizando uma consulta na tabela clientes
+
+![Select na tabela clientes](images/postgres_database/select_clientes.png)
+
+
