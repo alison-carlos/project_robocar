@@ -1,19 +1,28 @@
 # Projeto Robocar
 
-O projeto será dividido em 4 etapas.
+Este projeto foi recriado a partir das vídeo aulas apresentadas no curso ***Formação Engenheiro de Dados: Domine Big Data!*** disponível neste [link](https://www.udemy.com/share/101CKgBEYcdldTRHw=/) ministrado pelo professor Fernando Amaral.
 
-1º - A locadora que controlar a locação de veículos.
+O mini projeto será dividido em 4 etapas.
 
+***1º - A locadora que controlar a locação de veículos.***
 
-2º - Ela deseja fornecer dados analíticos para os gestores.
+Para isso será criado um banco de dados no Postgres onde serão criadas as tabelas.
 
+***2º - Ela deseja fornecer dados analíticos para os gestores.***
 
-3º - Ter os contratos armazenados digitalmentes em algum banco de dados.
+Iremos realizar a importação dos dados do banco de dados Postgres para o Hive onde iremos realizar algumas consultar usando o Hue.
 
+***3º - Ter os contratos armazenados digitalmentes em algum banco de dados.***
 
-4º - Gerenciar diariamente o número de contratos de risco.
+Iremos simular um ambiente de armazenamento no MongoDB
 
+***4º - Gerenciar diariamente o número de contratos de risco.***
+
+E ao final será executado uma pequena aplicação para buscar contratos de risco.
 ________________________________________________________________________________________
+________________________________________________________________________________________
+
+# 1 Etapa, criação do banco de dados relacional e carga dos dados.
 
 ## Modelo relacional projetado
 
@@ -120,3 +129,6 @@ create table if not exists locacao
 ### Consulta na tabela Locacao
 
 ![Consulta na tabela locacao](images/postgres_database/selects/locacao.png)
+
+________________________________________________________________________________________
+________________________________________________________________________________________
