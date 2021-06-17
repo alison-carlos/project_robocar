@@ -105,8 +105,18 @@ create table if not exists locacao
 
 ![Inserindo os dados nas tabelas do banco Locadora](images/postgres_database/insert_table.png)
 
-### Realizando uma consulta na tabela clientes
+### Consulta na tabela clientes
 
-![Select na tabela clientes](images/postgres_database/select_clientes.png)
+![Consulta na tabela clientes](images/postgres_database/selects/clientes.png)
 
+### Consulta na tabela despachantes
 
+![Consulta na tabela despachantes](images/postgres_database/selects/despachantes.png)
+
+### Consulta na tabela veiculos
+
+![Consulta na tabela veiculos](images/postgres_database/selects/veiculos.png)
+
+### Consulta na tabela Locacao
+
+![Consulta na tabela locacao](images/postgres_database/selects/locacao.png)
