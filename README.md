@@ -137,3 +137,27 @@ Nesta etapa, usando o beeline, foi feito uma conexão no banco do Hive da VM e c
 
 ![Conectando-se ao Hive e criando o banco de dados](images/hive_database/create_database.png)
 
+Após a criação do banco, utilizei o Sqoop para importar os dados.
+
+``` 
+sqoop import --connect jdbc:postgresql://127.0.0.1/locadora --username postgres --password 123456 --table clientes --hive-import --create-hive-table --hive-table locadora.clientes; 
+```
+![Importando tabela clientes para o Hive](images/hive_database/sqoop_import_clientes.png)
+
+```
+sqoop import --connect jdbc:postgresql://127.0.0.1/locadora --username postgres --password 123456 --table despachantes --hive-import --create-hive-table --hive-table locadora.despachantes;
+```
+![Importando tabela despachantes para o Hive](images/hive_database/sqoop_import_despachantes.png)
+
+```
+sqoop import --connect jdbc:postgresql://127.0.0.1/locadora --username postgres --password 123456 --table veiculos --hive-import --create-hive-table --hive-table locadora.veiculos;
+![Importando tabela veiculos para o Hive](images/hive_database/sqoop_import_veiculos.png)
+
+```
+sqoop import --connect jdbc:postgresql://127.0.0.1/locadora --username postgres --password 123456 --table locacao --hive-import --create-hive-table --hive-table locadora.locacao;
+```
+![Importando tabela locacao para o Hive](images/hive_database/sqoop_import_locacao.png)
+
+Realizando uma consulta simples no Hive para verificar se tabelas foram criadas com sucesso.
+
+![Realizando select no database do Hive](images/hive_database/select_tables.png)
