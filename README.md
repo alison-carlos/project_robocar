@@ -20,9 +20,8 @@ Iremos simular um ambiente de armazenamento no MongoDB
 
 E ao final será executado uma pequena aplicação para buscar contratos de risco.
 ________________________________________________________________________________________
-________________________________________________________________________________________
 
-# 1 Etapa, criação do banco de dados relacional e carga dos dados.
+# 1º Etapa, criação do banco de dados relacional e carga dos dados.
 
 ## Modelo relacional projetado
 
@@ -131,4 +130,10 @@ create table if not exists locacao
 ![Consulta na tabela locacao](images/postgres_database/selects/locacao.png)
 
 ________________________________________________________________________________________
-________________________________________________________________________________________
+
+# 2º Etapa, importação dos dados para o Hive.
+
+Nesta etapa, usando o beeline, foi feito uma conexão no banco do Hive da VM e criado um database para receber os dados que estão no Postgresql.
+
+![Conectando-se ao Hive e criando o banco de dados](images/hive_database/create_database.png)
+
