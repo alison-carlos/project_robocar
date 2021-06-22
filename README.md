@@ -151,6 +151,7 @@ sqoop import --connect jdbc:postgresql://127.0.0.1/locadora --username postgres 
 
 ```
 sqoop import --connect jdbc:postgresql://127.0.0.1/locadora --username postgres --password 123456 --table veiculos --hive-import --create-hive-table --hive-table locadora.veiculos;
+```
 ![Importando tabela veiculos para o Hive](images/hive_database/sqoop_import_veiculos.png)
 
 ```
