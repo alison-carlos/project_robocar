@@ -203,25 +203,26 @@ def input_data(x):
     contract = {}
     
     for i in range(1, x + 1):
-        contract[i]= {}
-        contract[i]['idcliente'] = randint(1, 25)
-        contract[i]['idcontrato'] = randint(1, 9999)
-        contract[i]['datacadastro'] = fake.date()
+        
+        contract['idcliente'] = randint(1, 25)
+        contract['idcontrato'] = randint(1, 9999)
+        contract['datacadastro'] = fake.date()
 
         risk = randint(1, 3)
 
         if risk == 1:
-            contract[i]['tiporisco'] = 'alto'
+            contract['tiporisco'] = 'alto'
         elif risk == 2:
-            contract[i]['tiporisco'] = 'moderado'
+            contract['tiporisco'] = 'moderado'
         else:
-            contract[i]['tiporisco'] = 'baixo'
+            contract['tiporisco'] = 'baixo'
+        
+        print(f'{contract},')
 
-    print(contract)
-
-	# dictionary dumped as json in a json file
-    with open('contracts.json', 'w') as fp:
-        json.dump(contract, fp)
+        #dictionary dumped as json in a json file
+        with open('contracts.json', 'a') as fp:
+            json.dump(contract, fp)
+            fp.write("\n")
 	
 def main():
 
@@ -233,13 +234,13 @@ main()
 
 ```
 
-O arquivo .json gerado está disponível [aqui](files/mongoDB/data.json)
+O arquivo .json gerado está disponível [aqui](files/mongoDB/contracts.json)
 
 Aqui eu apenas enviei o arquivo .json para a VM e executei o comando abaixo
 
-![Importando para o mongoDB](images/mongoDB/import_json_to_mongo.png)
+![Importando para o mongoDB](images/mongoDB/import_file_to_mongo.png)
 
 Após isso somente conferir se a collection estava OK.
 
-![Executando um find na collection](images/mongoDB/find_on_collection.png)
+![Executando um find na collection](images/mongoDB/find_collection_on_mongoDB.png)
 
