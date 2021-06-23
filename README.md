@@ -162,3 +162,26 @@ sqoop import --connect jdbc:postgresql://127.0.0.1/locadora --username postgres 
 Realizando uma consulta simples no Hive para verificar se tabelas foram criadas com sucesso.
 
 ![Realizando select no database do Hive](images/hive_database/select_tables.png)
+
+Para realizar a analise dos dados optei por utilizar a interface do HUE que é bastante amigável.
+
+O projeto propôs para fins didáticos algumas análises que iremos realizar diretamente na interface do Hue, para tornar mais prático e reutilizável, foram criadas algumas views.
+
+![Criando as views](images/hue/create_views.png)
+
+##### Quais despachantes locaram quais veiculos?
+
+![Questão 1](images/hue/question_1.png)
+
+##### Quais veículos foram locados em determinados períodos?
+
+![Questão 2](images/hue/question_2.png)
+
+##### Qual o faturamento mensal de locação?
+
+![Questão 3](images/hue/question_3.png)
+
+##### Quais clientes locaram quais veículos?
+
+![Questão 4](images/hue/question_4.png)
+________________________________________________________________________________________
