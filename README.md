@@ -185,3 +185,61 @@ O projeto propôs para fins didáticos algumas análises que iremos realizar dir
 
 ![Questão 4](images/hue/question_4.png)
 ________________________________________________________________________________________
+
+# 3º Etapa, simulando arquivos de contrato e importando para o MongoDB
+
+Nesta fase do projeto eu criei um pequeno script para gerar alguns dados de contrato ficticio no formato .json e importar para o Mongo DB.
+
+```
+from faker import Faker
+import json		
+from random import randint	
+from datetime import datetime
+
+fake = Faker()
+
+def input_data(x):
+
+    contract = {}
+    
+    for i in range(1, x + 1):
+        contract[i]= {}
+        contract[i]['idcliente'] = randint(1, 25)
+        contract[i]['idcontrato'] = randint(1, 9999)
+        contract[i]['datacadastro'] = fake.date()
+
+        risk = randint(1, 3)
+
+        if risk == 1:
+            contract[i]['tiporisco'] = 'alto'
+        elif risk == 2:
+            contract[i]['tiporisco'] = 'moderado'
+        else:
+            contract[i]['tiporisco'] = 'baixo'
+
+    print(contract)
+
+	# dictionary dumped as json in a json file
+    with open('contracts.json', 'w') as fp:
+        json.dump(contract, fp)
+	
+def main():
+
+	# Enter number of contracts
+	number_of_contracts = 25
+	input_data(number_of_contracts)
+
+main()
+
+```
+
+O arquivo .json gerado está disponível [aqui](files/mongoDB/data.json)
+
+Aqui eu apenas enviei o arquivo .json para a VM e executei o comando abaixo
+
+![Importando para o mongoDB](images/mongoDB/import_json_to_mongo.png)
+
+Após isso somente conferir se a collection estava OK.
+
+![Executando um find na collection](images/mongoDB/import_json_to_mongo.png)
+
