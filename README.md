@@ -241,5 +241,5 @@ Aqui eu apenas enviei o arquivo .json para a VM e executei o comando abaixo
 
 Após isso somente conferir se a collection estava OK.
 
-![Executando um find na collection](images/mongoDB/import_json_to_mongo.png)
+![Executando um find na collection](images/mongoDB/find_on_collection.png)
 
