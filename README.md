@@ -1,6 +1,6 @@
 # Projeto Robocar
 
-Este projeto foi recriado a partir das vídeo aulas apresentadas no curso ***Formação Engenheiro de Dados: Domine Big Data!*** disponível neste [link](https://www.udemy.com/share/101CKgBEYcdldTRHw=/) ministrado pelo professor Fernando Amaral.
+Este projeto foi recriado a partir das vídeo aulas apresentadas no curso ***Formação Engenheiro de Dados: Domine Big Data!*** disponível neste [link](https://www.udemy.com/share/101CKgBEYcdldTRHw=/){:target="_blank"} ministrado pelo professor Fernando Amaral.
 
 O mini projeto será dividido em 4 etapas.
 
@@ -244,3 +244,14 @@ Após isso somente conferir se a collection estava OK.
 
 ![Executando um find na collection](images/mongoDB/find_collection_on_mongoDB.png)
 
+________________________________________________________________________________________
+
+# 4º Etapa, usando o Pyspark para fazer o processamento distribuido.
+
+Nesta task da atividade proposta, a ideia foi apenas rodar um script do Spark através do PySpark para verificar quantos contratos estavam classificados como de alto risco.
+
+![Executando script desenvolvido em Pyspark](images/spark/script_pyspark.png)
+
+Após o processamento ser finalizado, apenas consultei o resultado gerado no HDFS através da interface do Hue.
+
+![Verificando o resultado](images/spark/result_processing.png)
