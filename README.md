@@ -1,6 +1,6 @@
 # Projeto Robocar
 
-Este projeto foi recriado a partir das vídeo aulas apresentadas no curso ***Formação Engenheiro de Dados: Domine Big Data!*** disponível neste [link](https://www.udemy.com/share/101CKgBEYcdldTRHw=/){target="_blank"} ministrado pelo professor Fernando Amaral.
+Este projeto foi recriado a partir das vídeo aulas apresentadas no curso ***Formação Engenheiro de Dados: Domine Big Data!*** disponível neste <a href="https://www.udemy.com/share/101CKgBEYcdldTRHw=/" target="_blank">link</a> ministrado pelo professor Fernando Amaral.
 
 O mini projeto será dividido em 4 etapas.
 
